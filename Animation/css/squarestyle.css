@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+}
+
+div#container {
+    border: 3px solid red;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+#square1 {
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    position: absolute;
+    top: 434px;
+    /* z-index: 2; */
+    
+}
+
+@keyframes expandHorizontal {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+@keyframes expandVertical {
+    from {height: 0%;}
+    to {height: 100%;}
+}
+
+#animation1 {
+    width: inherit;
+    height: 3px;
+    background-color: black;
+    animation: expandHorizontal 1.5s ease;
+    animation-iteration-count: infinite;
+}
+
+#middle-box {
+    width: 300px;
+    height: 100px;
+    /* border: 2px solid violet; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+}
+
+#thin-square1 {
+    width: 3px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    /* background-color: cyan; */
+    display: flex;
+    align-items: flex-end;
+}
+
+#animation2 {
+    width: 5px;
+    height: inherit;
+    background-color: black;
+    animation: expandVertical 1.5s ease;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#thin-square2 {
+    width: 3px;
+    height: 50px;
+    /* border: 1px solid blue; */
+    /* background-color: cyan; */
+    display: flex;
+    align-items: flex-start;
+}
+
+#main-square {
+    /* border: 1px solid black; */
+    background-color: orangered;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* z-index: 3; */
+}
+
+#square2 {
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 485px;
+    /* z-index: 2; */
+}
+

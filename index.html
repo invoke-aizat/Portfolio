@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Portfolio</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <!-- <ul>
+                <li>About</li>
+                <li>|</li>
+                <li>Projects</li>
+            </ul> -->
+
+            <div class="nav-button home">
+                <div class="text-box">
+                    <a href="#container2"><p id="nav-about">About</p></a>
+                    <div class="underline-box">
+                        <div class="underline-animation"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-button home">
+                <div class="text-box projects">
+                    <a href="#container3"><p id="nav-projects">Projects</p></a>
+                    <div class="underline-box">
+                        <div class="underline-animation"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!-------------- Landing Page Section ------------------------------>
+        <div id="container">
+            <div id="greeting">
+                <h1>Hi, my name is Aizat!</h1>
+            </div>
+
+            <div id="description">
+                <h2>I'm a Software Engineer for INVOKE Malaysia, currently undergoing a Coding Bootcamp.</h2>
+            </div>
+
+            <div id="progress">
+                <div class="text-box progress">
+                <h3>Check Progress</h3>
+                <div class="underline-box">
+                    <div class="underline-animation"></div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="box">
+
+            <div class="sound-box"></div>
+            <div class="sound-box sTwo"></div>
+            <div class="sound-box sThree"></div>
+            <div class="sound-box sFour"></div>
+            <div class="sound-box sFive"></div>
+            <div class="sound-box sSix"></div>
+            <div class="sound-box sSeven"></div>
+            <div class="sound-box sEight"></div>
+            <div class="sound-box sNine"></div>
+            <div class="sound-box sTen"></div>
+            <div class="sound-box sEleven"></div>
+            <div class="sound-box sTwelve"></div>
+            <div class="sound-box sThirteen"></div>
+
+        </div>
+
+        <!-------------- About Section ------------------------------>
+
+        <div id=container2>
+            <div id="about">
+                
+                <div id="about-separator-left">
+
+                    <div id="about-me-title"><h4>About Me:</h4></div>
+
+                    <div class="about-content image">
+                        <img id="aizat" src="images/IMG_9381.JPG"/>
+                    </div>
+
+                    <div id="contact-me-title">
+                        <h4>Contact Me:</h4>
+                    </div>
+
+                    <div class="icon-container left">
+                        <i class="lab la-google la-2x"></i>
+                        <i class="lab la-github la-2x"></i>
+                        <i class="lab la-linkedin-in la-2x"></i>
+                    </div>
+                </div>
+            
+                <hr>
+                <div id="about-separator-right">
+                    <div class="about-content name">
+                        <h5>Name:</h5>
+                        <p>Aizat bin Borhanudin</p>
+                    </div>
+                    <div class="about-content age">
+                        <h5>Age:</h5>
+                        <p>25</p>
+                    </div>
+                    <div class="about-content location">
+                        <h5>Location:</h5>
+                        <p>Kuala Lumpur, Malaysia</p>
+                    </div>
+                    <div class="about-content location">
+                        <h5>Hobbies:</h5>
+                        <div class="icon-container right">
+                            <i class="fa fa-futbol fa-2x"></i>
+                            <i class="lab la-playstation la-2x"></i>
+                            <i class="fa fa-dumbbell fa-2x"></i>
+                            <i class="fa fa-bed fa-2x"></i>
+                            <i class="fa fa-utensils fa-2x"></i>
+                            <i class="fa fa-record-vinyl fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                    
+                <hr>
+            </div>
+            
+            <div id="resume">
+                <hr>
+                <img id="resume" src="images/resume.JPG" />
+                <br>
+                <a href="images/Latest CV AIZAT 2020.pdf">Download Resume</a>
+            </div>
+        </div>
+
+        <!-------------- Project Section ------------------------------>
+        <div id="container3">
+
+            <div id="project">
+                <div id="project-content">
+                    
+
+                    <div class="project-slider">
+                        <h4>Project1 Name</h4>
+                        <p>Description</p>
+                    </div>
+                    <div class="project-slider">
+                        <h4>Project2 Name</h4>
+                        <p>Description</p>
+                    </div>
+                    <div class="project-slider">
+                        <h4>Project3 Name</h4>
+                        <p>Description</p>
+                    </div>
+                    <div class="project-slider">
+                        <h4>Project4 Name</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+
+                <div class="button left" onclick="moveLeft()"><i class="las la-angle-left left"></i></div>
+                <div class="button right" onclick="moveRight()"><i class="las la-angle-right right"></i></div>
+
+                <div id="pagination-holder">
+                    <ul>
+                        <li id="dot1" onclick="showSlider(0)"></li>
+                        <li id="dot2" onclick="showSlider(-100)"></li>
+                        <li id="dot3" onclick="showSlider(-200)"></li>
+                        <li id="dot4" onclick="showSlider(-300)"></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr>
+            <div id="mastery">
+                
+                <div id="mastery-content">
+                    <div class="skill title">Skill Progress</div>
+                    <div class="skill">
+                        <div class="progress-title">HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation html"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation css"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation js"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">Bootstrap</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation bootstrap"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">PHP</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation php"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">Laravel</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation laravel"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="progress-title">React</div>
+                        <div class="progress-bar">
+                            <div class="progress-animation react"></div>
+                        </div>
+                    </div>
+                    <div class="skill more">More languages to come...</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+
+            var sPos = 0;
+
+            function moveRight() {
+                
+                sPos -= 100;
+
+                if (sPos <= -400) {
+                    sPos = 0;
+                }
+
+                var li = document.querySelectorAll("li");
+                for (i=0; i < li.length; i++) {
+                    li[i].className = "";
+                }
+
+                if (sPos === 0) {document.getElementById("dot1").className = "active";}
+                else if (sPos === -100) {document.getElementById("dot2").className = "active";}
+                else if (sPos === -200) {document.getElementById("dot3").className = "active";}
+                else if (sPos === -300) {document.getElementById("dot4").className = "active";}
+                
+
+                document.getElementById("project-content").style.transform = `translate(${sPos}%,0)`;
+                // console.log(sPos);
+
+                console.log(event.srcElement);
+
+            }
+
+            function moveLeft() {
+                
+                sPos += 100;
+
+                if (sPos > 0) {
+                    sPos = -300;
+                }
+
+                var li = document.querySelectorAll("li");
+
+                for (i=0; i < li.length; i++) {
+                    li[i].className = "";
+                }
+
+                if (sPos === 0) {document.getElementById("dot1").className = "active";}
+                else if (sPos === -100) {document.getElementById("dot2").className = "active";}
+                else if (sPos === -200) {document.getElementById("dot3").className = "active";}
+                else if (sPos === -300) {document.getElementById("dot4").className = "active";}
+
+                document.getElementById("project-content").style.transform = `translate(${sPos}%,0)`;
+                // console.log(sPos);
+
+                console.log(event.srcElement);
+            }
+
+            function showSlider(pos) {
+                // Declare variable li
+                var li = document.querySelectorAll("li");
+
+                // Remove className from all <li>
+                for (i=0; i < li.length; i++) {
+                    li[i].className = "";
+                }
+                
+                var target = event.srcElement.id;
+                document.getElementById(target).className = "active";
+                console.log(event.srcElement);
+
+                sPos = pos;
+                document.getElementById("project-content").style.transform = `translate(${sPos}%,0)`;
+                console.log(sPos);
+            }
+        </script>
+    </body>
+</html>
