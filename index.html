@@ -82,6 +82,7 @@
                     <div id="about-me-title"><h4>About Me:</h4></div>
 
                     <div class="about-content image">
+                        <div id="image-cover" onclick="showModal()"></div>
                         <img id="aizat" src="images/IMG_9381.JPG"/>
                     </div>
 
@@ -119,7 +120,7 @@
                         <p>Kuala Lumpur, Malaysia</p>
                     </div>
                     <div class="about-content hobbies">
-                        <h4>Hobbies:</h4>
+                        <h4>Interests:</h4>
                         <div class="icon-container icon-right">
                             <i class="fa fa-futbol fa-2x" onmousedown="displayFav(1)" onmouseup="removeFav(1)"></i>
                             <i class="lab la-playstation la-2x" onmousedown="displayFav(2)" onmouseup="removeFav(2)"></i>
@@ -165,6 +166,7 @@
                 <a href="images/Latest CV AIZAT 2020.pdf" id="resume-link" target="_blank">Download Resume</a>
             </div>
         </div>
+        
 
         <!-------------- Project Section ------------------------------>
         <div id="container3">
@@ -257,7 +259,28 @@
             </div>
         </div>
 
+        <div id="modal">
+            
+            <div id="modal-box">
+                <i class="las la-times x-icon" onclick="hideModal()"></i>
+                <div id="modal-content">
+                    <h4>More About Me</h4>
+                    <p id="modal-para">Hello there! I am a graduate from the Ohio State University, where I did my Bachelor's Degree in Electrical & Computer Engineering. I recently made the switch to Software Engineering as I'm interested in learning about coding and web development. Currently, I am undergoing a 3-month coding bootcamp under INVOKE Malysia to become a Full-stack Engineer. Throughout my coding journey, I am looking to dive deeper into topics such as Artificial Intelligence, Machine Learning, Internet of Things and Networking. I hope that you do follow along my journey in exploring the exciting world of coding! Do reach out to me for any questions. Peace out!</p>
+                </div>
+            </div>
+        </div>
         <script>
+
+            var modal = document.getElementById("modal");
+
+            function showModal() {
+                modal.style.display = "flex";
+                modal.style.overflow = "scroll";
+            }
+
+            function hideModal() {
+                modal.style.display = "none";
+            }
 
             var football = document.getElementById("football");
             var game = document.getElementById("game");

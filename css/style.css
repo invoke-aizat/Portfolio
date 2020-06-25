@@ -375,12 +375,39 @@ h3 {
 
 .image {
     height: auto;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 87, 129, 0.7);
+    /* position: absolute; */
+    position: absolute;
+    transform: scale(1.05);
+    /* display: block; */
+    z-index: 2;
+}
+
+#image-cover:hover {
+    opacity: 0;
+    transform: scale(1);
+
+    transition-duration: 0.5s;
 }
 
 img#aizat {
     width: 100%;
     height: auto;
-    opacity: 0.9;
+    /* opacity: 0.9; */
+    /* position: absolute; */
+    /* position: absolute; */
+    /* display: block; */
+    z-index: 1;
 }
 
 #contact-me-title {
@@ -535,6 +562,60 @@ img#resume {
 a#resume-link {
     margin: 30px;
     /* border: 1px solid black; */
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    /* position: absolute; */
+    z-index: 10;
+}
+
+#modal-box {
+    width: 50%;
+    min-width: 500px;
+    max-height: auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    /* overflow: scroll; */
+    /* border-radius: 5px; */
+
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+
+    text-align: justify;
+    /* position: absolute; */
+    /* z-index: 15; */
+}
+
+#modal-content {
+    /* border: 1px solid black; */
+    display: inline-block;
+    /* margin: 10px 0; */
+}
+
+p#modal-para {
+    /* margin: 5px 0; */
+    line-height: 25px;
+}
+
+i.x-icon {
+    float: right;
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 14px
 }
 
 #container3 {
