@@ -259,8 +259,8 @@
             </div>
         </div>
 
+        <!------------------------ Modal  Section ------------------------->
         <div id="modal">
-            
             <div id="modal-box">
                 <i class="las la-times x-icon" onclick="hideModal()"></i>
                 <div id="modal-content">
@@ -269,8 +269,10 @@
                 </div>
             </div>
         </div>
+
         <script>
 
+            // Function to show Modal in img#aizat
             var modal = document.getElementById("modal");
 
             function showModal() {
@@ -278,10 +280,12 @@
                 modal.style.overflow = "scroll";
             }
 
+            // Function to remove modal
             function hideModal() {
                 modal.style.display = "none";
             }
 
+            // Function to show interests in 'About Me' content
             var football = document.getElementById("football");
             var game = document.getElementById("game");
             var gym = document.getElementById("gym");
@@ -319,6 +323,7 @@
                     food.style.display = "none";}                   
             }
 
+            // Function to remove interests in 'About Me' content
             function removeFav(hobbyType) {
                 if (hobbyType === 1) {football.style.display = "none";}
                 else if (hobbyType === 2) {game.style.display = "none";}
@@ -328,6 +333,7 @@
                 else if (hobbyType === 6) {music.style.display = "none";}
             }
 
+            // Function to move slider to the right
             var sPos = 0;
 
             function moveRight() {
@@ -356,6 +362,7 @@
 
             }
 
+            // Function to move slider to the left
             function moveLeft() {
                 
                 sPos += 100;
@@ -381,6 +388,7 @@
                 console.log(event.srcElement);
             }
 
+            // Function for pagination holder
             function showSlider(pos) {
                 // Declare variable li
                 var li = document.querySelectorAll("li");
