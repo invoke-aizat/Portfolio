@@ -17,12 +17,6 @@
     <body>
 
         <nav>
-            <!-- <ul>
-                <li>About</li>
-                <li>|</li>
-                <li>Projects</li>
-            </ul> -->
-
             <div class="nav-button home">
                 <div class="text-box">
                     <a href="#container2"><p id="nav-about">About</p></a>
@@ -40,8 +34,6 @@
                     </div>
                 </div>
             </div>
-
-
         </nav>
 
         <!-------------- Landing Page Section ------------------------------>
@@ -54,14 +46,11 @@
                 <h2>I'm a Software Engineer for INVOKE Malaysia, currently undergoing a Coding Bootcamp.</h2>
             </div>
 
-            <div id="progress">
-                <div class="text-box progress">
-                <h3>Check Progress</h3>
-                <div class="underline-box">
-                    <div class="underline-animation"></div>
+            <a href="#mastery">
+                <div id="progress">
+                    <h3>Check Progress</h3>
                 </div>
-                </div>
-            </div>
+            </a>
 
         </div>
 
@@ -100,48 +89,80 @@
                         <h4>Contact Me:</h4>
                     </div>
 
-                    <div class="icon-container left">
-                        <i class="lab la-google la-2x"></i>
-                        <i class="lab la-github la-2x"></i>
-                        <i class="lab la-linkedin-in la-2x"></i>
+                    <div class="icon-container icon-left">
+
+                        <a href="aizat@invokeisdata.com" target="_blank">
+                            <i class="lab la-google la-2x"></i>
+                        </a>
+
+                        <a href="https://github.com/invoke-aizat" target="_blank">
+                            <i class="lab la-github la-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aizatb/" target="_blank">
+                            <i class="lab la-linkedin-in la-2x"></i>
+                        </a>
                     </div>
                 </div>
             
-                <hr>
+                <span></span>
                 <div id="about-separator-right">
                     <div class="about-content name">
-                        <h5>Name:</h5>
+                        <h4>Name:</h4>
                         <p>Aizat bin Borhanudin</p>
                     </div>
                     <div class="about-content age">
-                        <h5>Age:</h5>
+                        <h4>Age:</h4>
                         <p>25</p>
                     </div>
                     <div class="about-content location">
-                        <h5>Location:</h5>
+                        <h4>Location:</h4>
                         <p>Kuala Lumpur, Malaysia</p>
                     </div>
-                    <div class="about-content location">
-                        <h5>Hobbies:</h5>
-                        <div class="icon-container right">
-                            <i class="fa fa-futbol fa-2x"></i>
-                            <i class="lab la-playstation la-2x"></i>
-                            <i class="fa fa-dumbbell fa-2x"></i>
-                            <i class="fa fa-bed fa-2x"></i>
-                            <i class="fa fa-utensils fa-2x"></i>
-                            <i class="fa fa-record-vinyl fa-2x"></i>
+                    <div class="about-content hobbies">
+                        <h4>Hobbies:</h4>
+                        <div class="icon-container icon-right">
+                            <i class="fa fa-futbol fa-2x" onmousedown="displayFav(1)" onmouseup="removeFav(1)"></i>
+                            <i class="lab la-playstation la-2x" onmousedown="displayFav(2)" onmouseup="removeFav(2)"></i>
+                            <i class="fa fa-dumbbell fa-2x" onmousedown="displayFav(3)" onmouseup="removeFav(3)"></i>
+                            <i class="fa fa-bed fa-2x" onmousedown="displayFav(4)" onmouseup="removeFav(4)"></i>
+                            <i class="fa fa-utensils fa-2x" onmousedown="displayFav(5)" onmouseup="removeFav(5)"></i>
+                            <i class="fa fa-record-vinyl fa-2x" onmousedown="displayFav(6)" onmouseup="removeFav(6)"></i>
                         </div>
+                    </div>
+                    <div class="about-content hobby-football" id="football">
+                        <h4>Favorite Team:</h4>
+                        <p>Manchester United</p>
+                    </div>
+                    <div class="about-content game" id="game">
+                        <h4>Favorite Game:</h4>
+                        <p>The Last of Us</p>
+                    </div>
+                    <div class="about-content gym" id="gym">
+                        <h4>Favorite Workout:</h4>
+                        <p>Pull Ups</p>
+                    </div>
+                    <div class="about-content sleep" id="sleep">
+                        <h4>Favorite Time to Sleep:</h4>
+                        <p>Rainy Weather</p>
+                    </div>
+                    <div class="about-content food" id="food">
+                        <h4>Favorite Food:</h4>
+                        <p>Nasi Goreng</p>
+                    </div>
+                    <div class="about-content music" id="music">
+                        <h4>Favorite Music:</h4>
+                        <p>Indie</p>
                     </div>
                 </div>
                     
-                <hr>
+                
             </div>
-            
+            <span></span>
             <div id="resume">
-                <hr>
+                
                 <img id="resume" src="images/resume.JPG" />
-                <br>
-                <a href="images/Latest CV AIZAT 2020.pdf">Download Resume</a>
+                
+                <a href="images/Latest CV AIZAT 2020.pdf" id="resume-link" target="_blank">Download Resume</a>
             </div>
         </div>
 
@@ -152,21 +173,21 @@
                 <div id="project-content">
                     
 
-                    <div class="project-slider">
-                        <h4>Project1 Name</h4>
-                        <p>Description</p>
+                    <div class="project-slider slider1">
+                        <h4>Web Design #1</h4>
+                        <img src="images/project1.JPG" id="projectOne" />
                     </div>
-                    <div class="project-slider">
-                        <h4>Project2 Name</h4>
-                        <p>Description</p>
+                    <div class="project-slider slider2">
+                        <h4>Web Design #2</h4>
+                        <img src="images/project2.JPG" id="projectTwo" />
                     </div>
-                    <div class="project-slider">
-                        <h4>Project3 Name</h4>
-                        <p>Description</p>
+                    <div class="project-slider slider3">
+                        <h4>Weather Layout</h4>
+                        <img src="images/project3.JPG" id="projectThree" />
                     </div>
-                    <div class="project-slider">
-                        <h4>Project4 Name</h4>
-                        <p>Description</p>
+                    <div class="project-slider slider4">
+                        <h4>Graphic Design</h4>
+                        <img src="images/project4.JPG" id="projectFour" />
                     </div>
                 </div>
 
@@ -183,11 +204,11 @@
                 </div>
                 
             </div>
-            <hr>
+            <span></span>
             <div id="mastery">
                 
                 <div id="mastery-content">
-                    <div class="skill title">Skill Progress</div>
+                    <div class="skill title">Coding Progress</div>
                     <div class="skill">
                         <div class="progress-title">HTML</div>
                         <div class="progress-bar">
@@ -237,6 +258,52 @@
         </div>
 
         <script>
+
+            var football = document.getElementById("football");
+            var game = document.getElementById("game");
+            var gym = document.getElementById("gym");
+            var sleep = document.getElementById("sleep");
+            var food = document.getElementById("food");
+            var music = document.getElementById("music");
+
+            function displayFav(hobbyType) {
+                console.log(hobbyType);
+                if (hobbyType === 1) {football.style.display = "block"; football.style.animation = "moveDown " + 1 + "s";game.style.display = "none";
+                    gym.style.display = "none";
+                    sleep.style.display = "none";
+                    food.style.display = "none";
+                    music.style.display = "none";}
+                else if (hobbyType === 2) {game.style.display = "block"; game.style.animation = "moveDown " + 1 + "s";football.style.display = "none";gym.style.display = "none";
+                    sleep.style.display = "none";
+                    food.style.display = "none";
+                    music.style.display = "none";}
+                else if (hobbyType === 3) {gym.style.display = "block"; gym.style.animation = "moveDown " + 1 + "s";sleep.style.display = "none";
+                    food.style.display = "none";
+                    music.style.display = "none";football.style.display = "none";
+                    game.style.display = "none";}
+                else if (hobbyType === 4) {sleep.style.display = "block"; sleep.style.animation = "moveDown " + 1 + "s";football.style.display = "none";
+                    game.style.display = "none";
+                    gym.style.display = "none";food.style.display = "none";
+                    music.style.display = "none";}
+                else if (hobbyType === 5) {food.style.display = "block"; food.style.animation = "moveDown " + 1 + "s";football.style.display = "none";
+                    game.style.display = "none";
+                    gym.style.display = "none";
+                    sleep.style.display = "none";music.style.display = "none";}
+                else if (hobbyType === 6) {music.style.display = "block"; music.style.animation = "moveDown " + 1 + "s";football.style.display = "none";
+                    game.style.display = "none";
+                    gym.style.display = "none";
+                    sleep.style.display = "none";
+                    food.style.display = "none";}                   
+            }
+
+            function removeFav(hobbyType) {
+                if (hobbyType === 1) {football.style.display = "none";}
+                else if (hobbyType === 2) {game.style.display = "none";}
+                else if (hobbyType === 3) {gym.style.display = "none";}
+                else if (hobbyType === 4) {sleep.style.display = "none";}
+                else if (hobbyType === 5) {food.style.display = "none";}
+                else if (hobbyType === 6) {music.style.display = "none";}
+            }
 
             var sPos = 0;
 
