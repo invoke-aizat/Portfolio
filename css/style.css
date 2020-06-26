@@ -436,7 +436,7 @@ img#aizat {
     padding: 0px;
     margin: 0px;
     /* border: 1px solid cyan; */
-    min-height: 200px;
+    min-height: 150px;
 }
 
 span {
@@ -448,7 +448,7 @@ span {
 
 #about-separator-right {
     width: 50%;
-    min-height: 700px;
+    min-height: 600px;
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -487,18 +487,6 @@ span {
     to {
         transform: translateY(0px);
         opacity: 1;
-    }
-}
-
-@keyframes moveUp {
-    from {
-        transform: translateY(50px);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(-50px);
-        opacity: 0;
     }
 }
 
