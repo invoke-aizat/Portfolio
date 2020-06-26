@@ -452,7 +452,7 @@ span {
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid purple; */
     padding: 10px;
@@ -861,6 +861,7 @@ li {
 
     #container {
         min-height: 800px;
+        min-width: 450px;
     }
 
     #box {
@@ -872,9 +873,9 @@ li {
         text-align: center;
         font-size: 10px;
     }
-    #description {
+    /* #description {
         width: 500px;
-    }
+    } */
 
     #progress {
         bottom: 10px;
@@ -969,7 +970,7 @@ li {
     #project-content {
         height: 500px;
         width: 100%;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     .project-slider {
