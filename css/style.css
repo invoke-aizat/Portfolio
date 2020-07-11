@@ -599,13 +599,15 @@ a#resume-link {
 
 #modal-content {
     /* border: 1px solid black; */
+    /* font-size: 18px; */
     display: inline-block;
     /* margin: 10px 0; */
 }
 
 p#modal-para {
     /* margin: 5px 0; */
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 i.x-icon {
@@ -870,7 +872,7 @@ li {
     --percentProg: 1%;
 }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 812px) {
 
     nav {
         font-size: 1.1rem;
@@ -1051,7 +1053,7 @@ li {
 
     #modal-box {
         width: 100%;
-        
+        height: 70%;
     }
 
     p#modal-para {
