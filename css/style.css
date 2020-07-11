@@ -14,10 +14,19 @@
 html, body {
     width: 100%;
     height: 100%;
+
 }
+
+
 
 html {
     scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 hr {
@@ -417,9 +426,9 @@ img#aizat {
 }
 
 .icon-container {
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 5px;
+    /* padding: 5px; */
     /* border: 1px solid cyan; */
     display: flex;
     flex-direction: row;
@@ -434,7 +443,7 @@ img#aizat {
 .icon-right {
     justify-content: space-between;
     padding: 0px;
-    margin: 0px;
+    margin: 0 auto;
     /* border: 1px solid cyan; */
     min-height: 150px;
 }
@@ -570,7 +579,7 @@ a#resume-link {
 
 #modal-box {
     width: 50%;
-    min-width: 500px;
+    /* min-width: 500px; */
     max-height: auto;
     background-color: white;
     padding: 20px;
@@ -850,14 +859,26 @@ li {
 }
 
 .bootstrap {
-    --percentProg: 3%;
+    --percentProg: 20%;
 }
 
-.php, .laravel, .react {
+.php {
+    --percentProg: 40%
+}
+
+.laravel, .react {
     --percentProg: 1%;
 }
 
-@media (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    nav {
+        font-size: 1.1rem;
+    }
+
+    .nav-button {
+        width: 30%;
+    }
 
     #container {
         min-height: 800px;
@@ -879,6 +900,10 @@ li {
 
     #progress {
         bottom: 10px;
+    }
+
+    h3 {
+        font-size: 2.7vmax;
     }
 
     /* h1, h2 {
@@ -927,15 +952,6 @@ li {
         margin-bottom: 30px;
     }
 
-    /* .icon-container {
-        flex-wrap: nowrap;
-    } */
-
-    .icon-right {
-        min-height: 80px;
-        /* border: 1px solid black; */
-    }
-
     img#aizat {
         /* width: 250px; */
         max-width: 100%;
@@ -964,7 +980,7 @@ li {
     #project {
         width: 100%;
         height: auto;
-        overflow: visible;
+        /* overflow: visible; */
     }
 
     #project-content {
@@ -1031,6 +1047,15 @@ li {
         width: 100%;
         height: 20px;
         margin-left: 0px;
+    }
+
+    #modal-box {
+        width: 100%;
+        
+    }
+
+    p#modal-para {
+        font-size: 0.75rem;
     }
 
 }
